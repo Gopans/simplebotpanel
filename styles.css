@@ -1,0 +1,83 @@
+.bot-panel{
+    position:fixed;
+    bottom: 60px;
+    right:10px;
+    width:50px;
+    height: 50px;
+    overflow: hidden;
+    visibility: visible;
+    background:transparent;
+    transition: transform 0.2s ease-in-out;
+    backface-visibility: hidden;
+    opacity:1;
+    transform:translateY(100%);
+    z-index: 99999999;
+}
+
+.bot-panel.open{
+    position:fixed;
+    bottom: 1px;
+    right:15px;
+    width:300px;
+    height: 450px;
+    overflow: hidden;
+    visibility: visible;
+    background:#fff;
+    border: 1px solid #ccc;
+    transition: transform 0.2s ease-in-out;
+    backface-visibility: hidden;
+    opacity:1;
+    transform:translateY(0%);
+    z-index:99999999;
+}
+
+.bot-header-minimized{
+position: absolute;
+background-color: #d9338c;
+box-sizing: content-box;
+color: white;
+   width:50px;
+   height:50px;
+   border-radius: 50px;
+   text-align:center;
+   line-height:45px;
+   vertical-align: middle;   
+   z-index: 1;
+   cursor: pointer;
+   font-size: 30px;
+}
+
+.bot-panel.open .bot-header-minimized{
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    border-radius: 0px;
+    z-index: 1;
+    text-align: left; 
+    padding: 0 10px;
+    line-height: 35px;   
+}
+
+.bot-panel .bot-header-title{    
+    display: none;
+}
+
+.bot-panel.open .bot-header-title{
+    font-size:20px;
+    display: inline-block;
+}
+ 
+.bot-panel .chat-panel{
+    opacity: 0;
+}
+
+.bot-panel.open .chat-panel{
+    opacity: 1;
+    width: 100%;
+    height:350px;
+    bottom: 5px;
+    position: absolute;
+    vertical-align: center;
+
+
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./styles.css"/>
+        <script>
+            function openPanel(){
+                var chatPanel = document.querySelector('.bot-panel');
+                if(chatPanel){
+                    chatPanel.classList.toggle('open');
+                }
+            }
+        </script>
+
+    </head>
+    <body>
+        <div class="bot-panel">
+            <div class="bot-header-minimized" onclick="openPanel()">
+                <!-- put your char icon here -->
+                <span class="bot-header-title">Chat</span>
+               
+            </div>
+             <!-- put your chat div here and control it like you want-->
+            <div class="chat-panel">Chat Window</div>
+           
+            
+        </div>
+    </body>
+</html>
